@@ -1,0 +1,57 @@
+# Create the root folder
+mkdir ecommerce-app
+cd ecommerce-app
+
+# Create client folder
+mkdir -p client/public/assets
+mkdir -p client/src/components
+mkdir -p client/src/pages
+mkdir -p client/src/context
+mkdir -p client/src/utils
+mkdir -p client/src/styles
+
+# Create server folder
+mkdir -p server/controllers
+mkdir -p server/models
+mkdir -p server/routes
+mkdir -p server/middleware
+mkdir -p server/config
+
+# Create client files
+touch client/public/index.html
+touch client/src/components/Navbar.jsx
+touch client/src/components/ProductCard.jsx
+touch client/src/components/Footer.jsx
+touch client/src/pages/Home.jsx
+touch client/src/pages/ProductList.jsx
+touch client/src/pages/ProductDetails.jsx
+touch client/src/pages/Cart.jsx
+touch client/src/pages/Checkout.jsx
+touch client/src/context/CartContext.js
+touch client/src/context/AuthContext.js
+touch client/src/utils/api.js
+touch client/src/App.js
+touch client/src/index.js
+touch client/src/styles/App.css
+touch client/src/styles/components.css
+
+# Create server files
+touch server/controllers/productController.js
+touch server/controllers/userController.js
+touch server/controllers/orderController.js
+touch server/models/Product.js
+touch server/models/User.js
+touch server/models/Order.js
+touch server/routes/productRoutes.js
+touch server/routes/userRoutes.js
+touch server/routes/orderRoutes.js
+touch server/middleware/authMiddleware.js
+touch server/middleware/errorHandler.js
+touch server/config/db.js
+touch server/server.js
+touch server/.env
+
+# Create root-level files
+touch package.json README.md
+
+echo "File structure generated successfully!"
